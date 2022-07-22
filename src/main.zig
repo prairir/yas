@@ -3,7 +3,6 @@ const std = @import("std");
 const page_size = std.mem.page_size;
 
 var outbuf: [page_size]u8 = undefined;
-const yBuf = ("y\n" ** (page_size / 2));
 
 pub fn main() anyerror!void {
     defer std.os.exit(0);
