@@ -1,7 +1,6 @@
 const std = @import("std");
 
-const page_size = std.mem.page_size;
-
+const page_size = 8 * 1024; // 8 kb
 var outbuf: [page_size]u8 = undefined;
 
 pub fn main() anyerror!void {
